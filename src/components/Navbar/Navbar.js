@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import Fade from 'react-reveal/Fade';
-import { IoMenuSharp, IoHomeSharp } from 'react-icons/io5';
+import {  IoHomeSharp, IoMenuSharp } from 'react-icons/io5';
 import { HiDocumentText } from 'react-icons/hi';
 import { BsFillGearFill } from 'react-icons/bs';
 import { MdPhone } from 'react-icons/md';
@@ -9,9 +9,10 @@ import { FaUser, FaFolderOpen } from 'react-icons/fa';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CloseIcon from '@material-ui/icons/Close';
+import { headerData } from '../../data/headerData';
+
 
 import './Navbar.css';
-import { headerData } from '../../data/headerData';
 import { ThemeContext } from '../../contexts/ThemeContext';
 
 function Navbar() {
@@ -132,17 +133,17 @@ function Navbar() {
 
     return (
         <div className='navbar'>
-            {/* <div className='navbar--container'>
-                <h1 style={{ color: theme.secondary }}>
+           <div className='navbar--container'>
+               <h1 style={{ color: theme.secondary }}>
                     {shortname(headerData.name)}
-                </h1>
+                </h1> 
 
                 <IoMenuSharp
                     className={classes.navMenu}
                     onClick={handleDrawerOpen}
                     aria-label='Menu'
                 />
-            </div> */}
+            </div> 
             <Drawer
                 variant='temporary'
                 onClose={(event, reason) => {
