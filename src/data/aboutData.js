@@ -1,6 +1,10 @@
+import Image  from "../assets/svg/about/orangeTheme-boy.svg"
+
 export const aboutData = {
     title: "Who I am",
-    description1: "My name's Jane. I'm a web designer and developer based in Southampton, UK.",
-    description2: "During the day I work as a lead developer at a local agency and in the evening I  work on freelance projects and utilize the time to built my own products. I spent my leisure hours writing articles and poetry. Right now I'm also trying a hand at machine learning and AI. I love to learn and explore new arenas.",
-    image: 2
+    description1: "I am a MERN Stack Software Developer with expertise in building scalable, secure, and user-friendly web applications.",
+    description2: "My focus is on delivering high-quality solutions that align with client goals and enhance user experience. With hands-on experience in React, Node.js, Express, and MongoDB, I ensure clean architecture and reliable performance.",
+    description3: "I believe in continuous learning and adapting to the latest technologies for better results. My commitment is to provide clients with innovative, on-time, and future-ready digital solutions.",
+
+    image: Image
 }
